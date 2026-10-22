@@ -109,10 +109,11 @@ def plot_decision_boundary_2d(
     Z = Z.reshape(xx.shape)
 
     ax.contourf(xx, yy, Z, alpha=0.25, cmap="viridis")
+    is_numeric = pd.api.types.is_numeric_dtype(y)
     scatter = ax.scatter(
         X_2d[:, 0],
         X_2d[:, 1],
-        c=y if np.issubdtype(y.dtype, np.number) else [list(class_names).index(v) for v in y],
+        c=y if is_numeric else [list(class_names).index(v) for v in y],
         cmap="viridis",
         edgecolor=COLOR_NAVY,
         linewidth=0.8,
