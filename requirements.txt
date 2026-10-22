@@ -1,0 +1,21 @@
+# Core Numerical and Scientific Computing
+numpy>=1.26.0
+pandas>=2.0.0
+scipy>=1.10.0
+
+# Machine Learning & Modeling
+scikit-learn>=1.4.0
+xgboost>=2.0.0
+
+# Visualization & Reporting
+matplotlib>=3.8.0
+seaborn>=0.13.0
+
+# Notebook Environment & Serialization
+jupyter>=1.0.0
+nbformat>=5.9.0
+joblib>=1.3.0
+
+# Quality Assurance & Testing
+pytest>=8.0.0
+requests>=2.31.0
