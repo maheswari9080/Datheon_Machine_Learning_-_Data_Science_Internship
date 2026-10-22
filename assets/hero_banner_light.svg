@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <linearGradient id="teal-accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0d9488"/>
+      <stop offset="100%" stop-color="#14b8a6"/>
+    </linearGradient>
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+    <filter id="card-shadow" x="-5%" y="-10%" width="110%" height="130%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="320" rx="16" fill="url(#bg-grad)" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- Decorative Top Color Ribbon -->
+  <path d="M 0 16 C 0 7.16 7.16 0 16 0 L 1184 0 C 1192.84 0 1200 7.16 1200 16 L 1200 6 L 0 6 Z" fill="url(#teal-accent)"/>
+
+  <!-- Subtle Background Grid Pattern -->
+  <g stroke="#cbd5e1" stroke-width="0.75" stroke-dasharray="4 4" opacity="0.35">
+    <line x1="100" y1="20" x2="100" y2="300" />
+    <line x1="300" y1="20" x2="300" y2="300" />
+    <line x1="500" y1="20" x2="500" y2="300" />
+    <line x1="700" y1="20" x2="700" y2="300" />
+    <line x1="900" y1="20" x2="900" y2="300" />
+    <line x1="1100" y1="20" x2="1100" y2="300" />
+    <line x1="20" y1="80" x2="1180" y2="80" />
+    <line x1="20" y1="180" x2="1180" y2="180" />
+  </g>
+
+  <!-- Program Badge -->
+  <g transform="translate(60, 42)">
+    <rect width="365" height="28" rx="14" fill="#f0fdfa" stroke="#99f6e4" stroke-width="1.2"/>
+    <circle cx="14" cy="14" r="5" fill="#0d9488"/>
+    <text x="26" y="18" font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-size="11" font-weight="700" fill="#0d9488" letter-spacing="0.8">DATHEON MACHINE LEARNING INTERNSHIP</text>
+  </g>
+
+  <!-- Suite Verification Badge -->
+  <g transform="translate(945, 42)">
+    <rect width="195" height="28" rx="14" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+    <circle cx="14" cy="14" r="4" fill="#10b981"/>
+    <text x="25" y="18" font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-size="11" font-weight="600" fill="#334155">18/18 TESTS PASSING</text>
+  </g>
+
+  <!-- Title & Subtitle -->
+  <text x="60" y="118" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif" font-size="38" font-weight="800" fill="#0f172a" letter-spacing="-1">
+    Applied Machine Learning Studio
+  </text>
+  <text x="60" y="152" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="500" fill="#475569">
+    Production Data Science Portfolio: Benchmark Classification • Regularized Regression • Imbalanced Churn • NLP Sentiment
+  </text>
+
+  <!-- 4 Feature Metric Cards in Grid -->
+  <g transform="translate(60, 185)">
+    <!-- Card 1 -->
+    <g transform="translate(0, 0)" filter="url(#card-shadow)">
+      <rect width="255" height="96" rx="10" fill="url(#card-grad)" stroke="#e2e8f0" stroke-width="1.2"/>
+      <rect x="0" y="0" width="5" height="96" rx="2" fill="#0d9488"/>
+      <text x="20" y="28" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#0d9488" letter-spacing="0.5">TASK 1 • CLASSIFICATION</text>
+      <text x="20" y="52" font-family="'Plus Jakarta Sans', sans-serif" font-size="15" font-weight="700" fill="#0f172a">Iris Benchmark</text>
+      <text x="20" y="78" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="600" fill="#334155">96.67% <tspan font-weight="400" font-size="11" fill="#64748b">Test Accuracy</tspan></text>
+    </g>
+
+    <!-- Card 2 -->
+    <g transform="translate(275, 0)" filter="url(#card-shadow)">
+      <rect width="255" height="96" rx="10" fill="url(#card-grad)" stroke="#e2e8f0" stroke-width="1.2"/>
+      <rect x="0" y="0" width="5" height="96" rx="2" fill="#d97706"/>
+      <text x="20" y="28" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#d97706" letter-spacing="0.5">TASK 2 • REGRESSION</text>
+      <text x="20" y="52" font-family="'Plus Jakarta Sans', sans-serif" font-size="15" font-weight="700" fill="#0f172a">California Housing</text>
+      <text x="20" y="78" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="600" fill="#334155">R² 0.6353 <tspan font-weight="400" font-size="11" fill="#64748b">Tuned Ridge</tspan></text>
+    </g>
+
+    <!-- Card 3 -->
+    <g transform="translate(550, 0)" filter="url(#card-shadow)">
+      <rect width="255" height="96" rx="10" fill="url(#card-grad)" stroke="#e2e8f0" stroke-width="1.2"/>
+      <rect x="0" y="0" width="5" height="96" rx="2" fill="#0284c7"/>
+      <text x="20" y="28" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#0284c7" letter-spacing="0.5">TASK 3 • CHURN</text>
+      <text x="20" y="52" font-family="'Plus Jakarta Sans', sans-serif" font-size="15" font-weight="700" fill="#0f172a">Telco Imbalance</text>
+      <text x="20" y="78" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="600" fill="#334155">0.8425 <tspan font-weight="400" font-size="11" fill="#64748b">ROC-AUC (76.7% Rec)</tspan></text>
+    </g>
+
+    <!-- Card 4 -->
+    <g transform="translate(825, 0)" filter="url(#card-shadow)">
+      <rect width="255" height="96" rx="10" fill="url(#card-grad)" stroke="#e2e8f0" stroke-width="1.2"/>
+      <rect x="0" y="0" width="5" height="96" rx="2" fill="#8b5cf6"/>
+      <text x="20" y="28" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#8b5cf6" letter-spacing="0.5">TASK 4 • NLP</text>
+      <text x="20" y="52" font-family="'Plus Jakarta Sans', sans-serif" font-size="15" font-weight="700" fill="#0f172a">Customer Reviews</text>
+      <text x="20" y="78" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="600" fill="#334155">85.83% <tspan font-weight="400" font-size="11" fill="#64748b">Acc (0.935 AUC)</tspan></text>
+    </g>
+  </g>
+</svg>

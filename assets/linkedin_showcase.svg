@@ -1,0 +1,240 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="canvas-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <linearGradient id="header-accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0d9488"/>
+      <stop offset="50%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="soft-shadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#0f172a" flood-opacity="0.05"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="800" rx="16" fill="url(#canvas-bg)" stroke="#cbd5e1" stroke-width="1.5"/>
+
+  <!-- Top Accent Bar -->
+  <path d="M 0 16 C 0 7.16 7.16 0 16 0 L 1184 0 C 1192.84 0 1200 7.16 1200 16 L 1200 8 L 0 8 Z" fill="url(#header-accent)"/>
+
+  <!-- Header Section -->
+  <g transform="translate(60, 45)">
+    <!-- Category Pill -->
+    <rect width="365" height="26" rx="13" fill="#f0fdfa" stroke="#99f6e4" stroke-width="1.2"/>
+    <circle cx="13" cy="13" r="4.5" fill="#0d9488"/>
+    <text x="25" y="17" font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-size="11" font-weight="700" fill="#0d9488" letter-spacing="0.8">DATHEON MACHINE LEARNING INTERNSHIP</text>
+
+    <!-- Main Title -->
+    <text x="0" y="65" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif" font-size="34" font-weight="800" fill="#0f172a" letter-spacing="-0.8">
+      Applied Machine Learning Studio
+    </text>
+    <text x="0" y="92" font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-size="15" font-weight="500" fill="#475569">
+      Four Production Data Science Pipelines • Reproducible Supervised Learning &amp; NLP
+    </text>
+
+    <!-- Top Status Badges -->
+    <g transform="translate(730, 10)">
+      <rect width="160" height="32" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" filter="url(#soft-shadow)"/>
+      <text x="14" y="21" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#0f172a">18/18 Tests Passed</text>
+      <circle cx="140" cy="16" r="4" fill="#10b981"/>
+
+      <rect x="175" y="0" width="175" height="32" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" filter="url(#soft-shadow)"/>
+      <text x="189" y="21" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#0f172a">30 Atomic Commits</text>
+      <circle cx="330" cy="16" r="4" fill="#0284c7"/>
+    </g>
+  </g>
+
+  <!-- 4 Project Grid Showcase -->
+  <g transform="translate(60, 165)">
+
+    <!-- QUADRANT 1: Multi-Class Benchmark Classification -->
+    <g transform="translate(0, 0)" filter="url(#soft-shadow)">
+      <rect width="525" height="255" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2"/>
+      <rect x="0" y="0" width="5" height="255" rx="2" fill="#0d9488"/>
+
+      <!-- Header -->
+      <g transform="translate(24, 22)">
+        <rect width="56" height="20" rx="4" fill="#0f172a"/>
+        <text x="11" y="14" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#ffffff">TASK 1</text>
+        <rect x="64" y="0" width="130" height="20" rx="4" fill="#f0fdfa" stroke="#99f6e4" stroke-width="1"/>
+        <text x="74" y="14" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="#0d9488">CLASSIFICATION</text>
+      </g>
+
+      <text x="24" y="68" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="700" fill="#0f172a">Multi-Class Benchmark Pipeline (Iris)</text>
+      <text x="24" y="90" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="500" fill="#64748b">Logistic Regression vs. Decision Tree under Stratified 80:20 Holdout</text>
+
+      <!-- Metrics Callout Box -->
+      <g transform="translate(24, 108)">
+        <rect width="477" height="64" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+        
+        <text x="20" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#64748b">DECISION TREE ACCURACY</text>
+        <text x="20" y="48" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="800" fill="#0d9488">96.67%</text>
+
+        <line x1="180" y1="12" x2="180" y2="52" stroke="#e2e8f0" stroke-width="1"/>
+
+        <text x="200" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#64748b">MACRO F1 SCORE</text>
+        <text x="200" y="48" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="800" fill="#0f172a">0.9666</text>
+
+        <line x1="330" y1="12" x2="330" y2="52" stroke="#e2e8f0" stroke-width="1"/>
+
+        <text x="350" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#64748b">LOGREG ACCURACY</text>
+        <text x="350" y="48" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="800" fill="#475569">93.33%</text>
+      </g>
+
+      <!-- Bullet Points -->
+      <g transform="translate(24, 192)" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#334155">
+        <circle cx="6" cy="6" r="3" fill="#0d9488"/>
+        <text x="18" y="10">Encapsulated StandardScaler inside Pipeline prevents test leakage.</text>
+        <circle cx="6" cy="28" r="3" fill="#0d9488"/>
+        <text x="18" y="32">Includes 2D decision boundary projection on discriminatory petal features.</text>
+      </g>
+    </g>
+
+    <!-- QUADRANT 2: Real Estate Housing Price Prediction -->
+    <g transform="translate(555, 0)" filter="url(#soft-shadow)">
+      <rect width="525" height="255" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2"/>
+      <rect x="0" y="0" width="5" height="255" rx="2" fill="#d97706"/>
+
+      <!-- Header -->
+      <g transform="translate(24, 22)">
+        <rect width="56" height="20" rx="4" fill="#0f172a"/>
+        <text x="11" y="14" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#ffffff">TASK 2</text>
+        <rect x="64" y="0" width="130" height="20" rx="4" fill="#fffbeb" stroke="#fde68a" stroke-width="1"/>
+        <text x="74" y="14" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="#d97706">REGRESSION</text>
+      </g>
+
+      <text x="24" y="68" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="700" fill="#0f172a">Real Estate Price Prediction (CA Housing)</text>
+      <text x="24" y="90" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="500" fill="#64748b">OLS vs. Ridge vs. Lasso with Cross-Validated GridSearchCV</text>
+
+      <!-- Metrics Callout Box -->
+      <g transform="translate(24, 108)">
+        <rect width="477" height="64" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+        
+        <text x="20" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#64748b">R² TEST SCORE</text>
+        <text x="20" y="48" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="800" fill="#d97706">0.6353</text>
+
+        <line x1="160" y1="12" x2="160" y2="52" stroke="#e2e8f0" stroke-width="1"/>
+
+        <text x="180" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#64748b">TEST ROOT MEAN SQ ERROR</text>
+        <text x="180" y="48" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="800" fill="#0f172a">$69,127</text>
+
+        <line x1="340" y1="12" x2="340" y2="52" stroke="#e2e8f0" stroke-width="1"/>
+
+        <text x="360" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#64748b">MEAN ABS ERROR</text>
+        <text x="360" y="48" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="800" fill="#475569">$49,645</text>
+      </g>
+
+      <!-- Bullet Points -->
+      <g transform="translate(24, 192)" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#334155">
+        <circle cx="6" cy="6" r="3" fill="#d97706"/>
+        <text x="18" y="10">Engineered domain ratios: rooms_per_household &amp; bedrooms_per_room.</text>
+        <circle cx="6" cy="28" r="3" fill="#d97706"/>
+        <text x="18" y="32">ColumnTransformer handles median imputation and ocean_proximity encoding.</text>
+      </g>
+    </g>
+
+    <!-- QUADRANT 3: Customer Churn Classification -->
+    <g transform="translate(0, 275)" filter="url(#soft-shadow)">
+      <rect width="525" height="255" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2"/>
+      <rect x="0" y="0" width="5" height="255" rx="2" fill="#0284c7"/>
+
+      <!-- Header -->
+      <g transform="translate(24, 22)">
+        <rect width="56" height="20" rx="4" fill="#0f172a"/>
+        <text x="11" y="14" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#ffffff">TASK 3</text>
+        <rect x="64" y="0" width="130" height="20" rx="4" fill="#f0f9ff" stroke="#bae6fd" stroke-width="1"/>
+        <text x="74" y="14" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="#0284c7">IMBALANCED CLF</text>
+      </g>
+
+      <text x="24" y="68" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="700" fill="#0f172a">Predictive Customer Churn Classifier</text>
+      <text x="24" y="90" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="500" fill="#64748b">Random Forest &amp; XGBoost with Cost-Sensitive Weighting (73:27 Imbalance)</text>
+
+      <!-- Metrics Callout Box -->
+      <g transform="translate(24, 108)">
+        <rect width="477" height="64" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+        
+        <text x="20" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#64748b">TEST ROC-AUC</text>
+        <text x="20" y="48" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="800" fill="#0284c7">0.8425</text>
+
+        <line x1="160" y1="12" x2="160" y2="52" stroke="#e2e8f0" stroke-width="1"/>
+
+        <text x="180" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#64748b">CHURN RECALL RATE</text>
+        <text x="180" y="48" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="800" fill="#0f172a">76.74%</text>
+
+        <line x1="330" y1="12" x2="330" y2="52" stroke="#e2e8f0" stroke-width="1"/>
+
+        <text x="350" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#64748b">5-FOLD CV MEAN</text>
+        <text x="350" y="48" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="800" fill="#475569">0.8468</text>
+      </g>
+
+      <!-- Bullet Points -->
+      <g transform="translate(24, 192)" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#334155">
+        <circle cx="6" cy="6" r="3" fill="#0284c7"/>
+        <text x="18" y="10">Class re-weighting lifts churn capture recall from ~50% to over 76.7%.</text>
+        <circle cx="6" cy="28" r="3" fill="#0284c7"/>
+        <text x="18" y="32">Supports dynamic decision threshold tuning for targeted retention campaigns.</text>
+      </g>
+    </g>
+
+    <!-- QUADRANT 4: NLP Sentiment Classification -->
+    <g transform="translate(555, 275)" filter="url(#soft-shadow)">
+      <rect width="525" height="255" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2"/>
+      <rect x="0" y="0" width="5" height="255" rx="2" fill="#8b5cf6"/>
+
+      <!-- Header -->
+      <g transform="translate(24, 22)">
+        <rect width="56" height="20" rx="4" fill="#0f172a"/>
+        <text x="11" y="14" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#ffffff">TASK 4</text>
+        <rect x="64" y="0" width="130" height="20" rx="4" fill="#f5f3ff" stroke="#ddd6fe" stroke-width="1"/>
+        <text x="74" y="14" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="#8b5cf6">NLP SENTIMENT</text>
+      </g>
+
+      <text x="24" y="68" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="700" fill="#0f172a">Customer Review Sentiment Analysis</text>
+      <text x="24" y="90" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="500" fill="#64748b">TF-IDF Vectorization • MultinomialNB vs. Logistic Regression</text>
+
+      <!-- Metrics Callout Box -->
+      <g transform="translate(24, 108)">
+        <rect width="477" height="64" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+        
+        <text x="20" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#64748b">LOGREG ACCURACY</text>
+        <text x="20" y="48" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="800" fill="#8b5cf6">85.83%</text>
+
+        <line x1="160" y1="12" x2="160" y2="52" stroke="#e2e8f0" stroke-width="1"/>
+
+        <text x="180" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#64748b">ROC-AUC DISCRIMINATION</text>
+        <text x="180" y="48" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="800" fill="#0f172a">0.9346</text>
+
+        <line x1="350" y1="12" x2="350" y2="52" stroke="#e2e8f0" stroke-width="1"/>
+
+        <text x="370" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#64748b">NAIVE BAYES ACC</text>
+        <text x="370" y="48" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="800" fill="#475569">84.83%</text>
+      </g>
+
+      <!-- Bullet Points -->
+      <g transform="translate(24, 192)" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#334155">
+        <circle cx="6" cy="6" r="3" fill="#8b5cf6"/>
+        <text x="18" y="10">Sublinear TF-IDF (5,000 bigrams) captures critical negation modifiers.</text>
+        <circle cx="6" cy="28" r="3" fill="#8b5cf6"/>
+        <text x="18" y="32">Live sentiment inference function with confidence ratings and error auditing.</text>
+      </g>
+    </g>
+
+  </g>
+
+  <!-- Bottom Showcase Footer Ribbon -->
+  <g transform="translate(60, 725)">
+    <rect width="1080" height="42" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+    
+    <text x="20" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#0f172a">
+      Stack: <tspan font-weight="500" fill="#475569">Python 3.12 • Scikit-learn • XGBoost • Pandas • Seaborn • Pytest</tspan>
+    </text>
+
+    <text x="730" y="26" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="500" fill="#0284c7">
+      github.com/maheswari9080/Datheon_Machine_Learning...
+    </text>
+  </g>
+</svg>

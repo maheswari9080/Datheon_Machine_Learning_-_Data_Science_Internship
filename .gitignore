@@ -70,3 +70,8 @@ venv.bak/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Temporary render artifacts
+assets/temp_*.html
+temp_*.html
+*.tmp
